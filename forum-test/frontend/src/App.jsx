@@ -2,6 +2,7 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
+import Login from './pages/Login'
 
 
 function App() {
@@ -9,9 +10,10 @@ function App() {
 
   return (
     <>
-     <div className="text-center mt-20 text-2xl text-blue-500">
+     {/* <div className="text-center mt-20 text-2xl text-blue-500">
       Hello Tailwind!
-    </div>
+    </div> */}
+    <Login/>
       
     </>
   )

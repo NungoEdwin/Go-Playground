@@ -1,5 +1,9 @@
 /* src/index.css */
-@import 'tailwindcss'
+@import 'tailwindcss';
+.nav-btns{
+ @apply bg-gray-700 px-3 py-1 rounded hover:bg-gray-500 cursor-pointer
+
+}
 
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
