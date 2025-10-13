@@ -1,11 +1,12 @@
-import { Link } from "react-router-dom"
+import Navbar from '../components/Navbar'
+
 function Login() {
 
   return (
     <>
     <div>
-    <div className="navigation-bar flex justify-between mb-50 shadow py-4 rounded">
-        {/* NavBar */}
+    {/* <div className="navigation-bar flex justify-between mb-50 shadow py-4 rounded">
+        
     <h1 className="projectname text-3xl font-bold text-blue-500 ">Forum</h1>
     <div className="nav-options font-medium text-blue-400 basis-1/2">
       <ul className="flex justify-around">
@@ -14,7 +15,8 @@ function Login() {
         <li className='nav-btns'><a href=""></a>Contact</li>
       </ul>
     </div>
-    </div>
+    </div> */}
+    <Navbar/>
     {/* LoginForm Area*/}
     <div className="content flex  items-center justify-center align-middle mx-auto my-0">
 
