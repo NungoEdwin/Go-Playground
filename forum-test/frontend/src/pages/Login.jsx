@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 function Login() {
 
   return (
@@ -8,8 +9,8 @@ function Login() {
     <h1 className="projectname text-3xl font-bold text-blue-500 ">Forum</h1>
     <div className="nav-options font-medium text-blue-400 basis-1/2">
       <ul className="flex justify-around">
-        <li className='nav-btns'><a  href=""></a>About</li>
-        <li className='nav-btns'><a href=""></a>Home</li>
+        <Link className='nav-btns' to="/">Home</Link> 
+        <Link className='nav-btns' to="/signup">Signup</Link> 
         <li className='nav-btns'><a href=""></a>Contact</li>
       </ul>
     </div>
