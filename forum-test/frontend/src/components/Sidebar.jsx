@@ -1,11 +1,12 @@
-import { FaHome } from "react-icons/fa";
+import { FaHome,FaUser,FaCog,FaSignOutAlt } from "react-icons/fa";
 export default ()=>{
     return(
         <>
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-5">
         <ElementItem icon={<FaHome/>} label="Home"/>
-        <ElementItem icon={<FaHome/>} label=""/>
-        <ElementItem icon={<FaHome/>} label="Home"/>
+        <ElementItem icon={<FaUser/>} label="Profile"/>
+        <ElementItem icon={<FaSignOutAlt/>} label="SignOut"/>
+        <ElementItem icon={<FaCog/>} label="Settings"/>
 
         </div>
         
