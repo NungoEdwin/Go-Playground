@@ -1,4 +1,5 @@
-import { FcLike,FcAddImage, FcFeedIn, FcDislike,} from "react-icons/fc"
+
+import { FaThumbsDown,FaComments, FaThumbsUp,} from "react-icons/fa"
 export default ()=>{
     return(
         <>
@@ -6,12 +7,10 @@ export default ()=>{
     <p>Hey allow me to access that thing in the quagmire adventure since 1950s </p>
     <img alt="image" />
     <div className="flex justify-evenly">
-       <ElementItem icon={<FcLike/>} label="Like"/> 
-       <ElementItem icon={<FcFeedIn/>} label="Chat"/> 
-       <ElementItem icon={<FcDislike/>} label="Unlike"/> 
-
+       <ElementItem icon={<FaThumbsUp/>} label="Like"/> 
+       <ElementItem icon={<FaComments/>} label="Chat"/> 
+       <ElementItem icon={<FaThumbsDown/>} label="Unlike"/> 
     </div>
-
 </div>
 
 
