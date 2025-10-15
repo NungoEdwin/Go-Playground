@@ -12,7 +12,7 @@ export default function Home(){
         <>
         <Navbar></Navbar>
         <div className="create-post flex flex-col items-center">
-        {showModal&&<CreatePost closeModal={closeModal}/>}
+        {showModal&&<CreatePost closeModal={closeModal} showModal={showModal}/>}
         {!showModal&&<button className="bg-gray-700 p-2 m-1 rounded text-blue-500" onClick={openModal}>Post</button>}
         </div>
         <div className=" grid  grid-cols-8 gap-5 items-stretch">
