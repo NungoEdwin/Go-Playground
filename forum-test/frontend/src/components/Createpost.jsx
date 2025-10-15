@@ -12,8 +12,8 @@ export default (prop)=>{
   };
     return (
         <>
-        
-<div className="flex flex-col items-center shadow-lg p-20  bg-black bg-opacity-50">
+<div className="fixed inset-0 bg-transparent backdrop-blur-2xl flex items-center justify-center z-50">     
+<div className="flex flex-col items-center shadow-lg p-20  bg-white">
 
 <textarea  className="bg-gray-100 rounded w-100 focus:outline-none" rows="10" />
 <label htmlFor="upload-image" className='bg-gray-700 text-blue-500 p-1.5 rounded m-1'>Upload Image:</label>
@@ -32,6 +32,7 @@ export default (prop)=>{
 
 
 
+ </div>
  </div>
         
         </>
