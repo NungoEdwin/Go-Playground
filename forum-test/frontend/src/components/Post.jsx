@@ -1,10 +1,11 @@
 
 import { FaThumbsDown,FaComments, FaThumbsUp,} from "react-icons/fa"
-export default ()=>{
+export default ({post})=>{
     return(
         <>
 <div className="flex rounded-lg p-5 flex-col shadow">
-    <p>Hey allow me to access that thing in the quagmire adventure since 1950s </p>
+    <h3>{post.title}</h3>
+    <p>{post.content}</p>
     <img alt="image" />
     <div className="flex justify-evenly">
        <ElementItem icon={<FaThumbsUp/>} label="Like"/> 
