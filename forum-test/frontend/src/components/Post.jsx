@@ -6,7 +6,7 @@ export default ({post})=>{
 <div className="flex rounded-lg p-5 flex-col shadow">
     <h3>{post.title}</h3>
     <p>{post.content}</p>
-    <img alt="image" />
+    <img  src={post.image} alt="image" style={{ width: '200px', height: 'auto', borderRadius: '8px' }}/>
     <div className="flex justify-evenly">
        <ElementItem icon={<FaThumbsUp/>} label="Like"/> 
        <ElementItem icon={<FaComments/>} label="Chat"/> 
