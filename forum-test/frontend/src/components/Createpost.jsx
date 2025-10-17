@@ -40,7 +40,7 @@ overlayClassName="fixed inset-0 bg-transparent backdrop-blur-2xl flex items-cent
           />
         </div>
       )}
-<button className="bg-gray-700 rounded p-1.5 text-blue-400 mt-1.5" onClick={()=>{prop.CreatePost([...prop.Posts,post]); prop.closeModal()}} >Create Post</button>
+<button className="bg-gray-700 rounded p-1.5 text-blue-400 mt-1.5" onClick={()=>{prop.CreatePost([...prop.Posts,post]); prop.closeModal()}} >Submit Post</button>
 
 
 
