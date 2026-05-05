@@ -20,7 +20,7 @@ export default function Home(){
         <div className="create-post flex relative mb-7 ">
         
         {showModal&&<CreatePost closeModal={closeModal} showModal={showModal} CreatePost={setPosts} Posts={posts}/>}
-        {!showModal&&<button className="bg-gray-700 p-2 rounded text-blue-500  absolute left-[64%]" onClick={openModal}> Create Post</button>}
+        {!showModal&&<button className="bg-gray-900 p-2 rounded-md text-blue-400  absolute left-[64%]" onClick={openModal}> Create Post</button>}
         </div>
         <div className=" grid  grid-cols-8 gap-5 items-stretch mt-3">
             <div className=" col-start-1 col-end-3 h-screen rounded-2xl p-5 shadow-2xl">{<Sidebar/>}</div>
