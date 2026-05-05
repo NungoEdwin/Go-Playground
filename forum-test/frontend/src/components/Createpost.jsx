@@ -24,11 +24,12 @@ const post={
         <>
 <Modal 
 overlayClassName="fixed inset-0 bg-transparent backdrop-blur-2xl flex items-center justify-center z-50"   
- className="flex flex-col items-center shadow-lg p-20  bg-white"
- contentLabel="CreatePost" isOpen={prop.showModal} onRequestClose={prop.closeModal}>
-<input  type="text"  className="bg-gray-100 rounded p-3 mb-1.5" placeholder="Post Title" value={title} onChange={e=>setTitle(e.target.value)}/>
-<textarea  className="bg-gray-100 rounded w-100 focus:outline-none" rows="10" placeholder='Post Content'  value={textarea} onChange={e=>setTextArea(e.target.value)}/>
-<label htmlFor="upload-image" className='bg-gray-700 text-blue-500 p-1.5 rounded m-1'>Upload Image:</label>
+ className="flex flex-col items-center shadow-lg p-20  bg-white rounded-3xl"
+ contentLabel="CreatePost" isOpen={prop.showModal} onRequestClose={prop.closeModal}
+ >
+<input  type="text"  className="bg-gray-50 rounded-xl p-3 mb-1.5" placeholder="Post Title" value={title} onChange={e=>setTitle(e.target.value)}/>
+<textarea  className="bg-gray-50 rounded-xl w-100 focus:outline-none" rows="10" placeholder='Post Content'  value={textarea} onChange={e=>setTextArea(e.target.value)}/>
+<label htmlFor="upload-image" className='bg-gray-700 text-blue-500 p-2 rounded-xl m-2'>Upload Image</label>
 <input type="file" accept="image/*" id="upload-image" onChange={handleImageChange}/>
   {preview && (
         <div style={{ marginTop: '10px' }}>
@@ -40,7 +41,7 @@ overlayClassName="fixed inset-0 bg-transparent backdrop-blur-2xl flex items-cent
           />
         </div>
       )}
-<button className="bg-gray-700 rounded p-1.5 text-blue-400 mt-1.5" onClick={()=>{prop.CreatePost([...prop.Posts,post]); prop.closeModal()}} >Submit Post</button>
+<button className="bg-gray-700 rounded-xl p-2 text-blue-400 mt-1.5" onClick={()=>{prop.CreatePost([...prop.Posts,post]); prop.closeModal()}} >Submit Post</button>
 
 
 
